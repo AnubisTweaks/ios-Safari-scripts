@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GArabic
 // @author       AnubisTweaks
-// @namespace    https://github.com/Mabdelwanis/GreasyScripts/blob/main/Translate_To_arabic.js
+// @namespace    https://github.com/AnubisTweaks/ios-Safari-scripts/blob/main/GArabic.js
 // @description  Translate Web page to Arabic on Fly Forked from KaiterPlus many thanks
 // @version      0.35
 // @license      BSD-3-Clause
