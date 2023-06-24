@@ -14,7 +14,7 @@
 // @include https://www.gstatic.com/sites/p/b9356d/system/services/test.html
 // @include https://www.gstatic.com/index.html
 // ==/UserScript==
-var xLocStI =0, xLocSto = [{origin:'https://anubistweaks.github.io/', restHref:'/Gbuttons/saveYourLocalStorage.html'},
+var xLocStI =0, xLocSto = [{origin:'https://anubistweaks.github.io', restHref:'/Gbuttons/saveYourLocalStorage.html'},
 	{origin:'https://www.gstatic.com', restHref:'/sites/p/b9356d/system/services/test.html', '//':'blank page'},
 	{origin:'https://www.gstatic.com', restHref:'/index.html', '//':'404 page'}];
 // For use own eXternal LocalStorage add to array your origin+restHref of site with https protocol,
@@ -408,7 +408,7 @@ if(location.host == xLocSto[xLocStI].origin.replace(/[^/]*\/\//,'')){
 					var bI = buttS[i]
 						,Gesch = ({m:'letzter',f:'letzte',n:'letztes'})['m,f,m,n,f'.split(',')[iD]]
 						,hint = function(j){return (j+1) +' '+ (j % 10 || j==10 ? $L[bI.one +'s'][j % 10 <4 && (j/10|0)!=1 ?0:1] : $L[bI.one]) }
-						,csLeft = function(ii,a){a = -127 + 37 * (ii -1); return design1612 || layout1811 ?{right: -a+1500+'px'}
+						,csLeft = function(ii,a){a = -127 + 37 * (ii -1); return design1612 || layout1811 ?{right: -a+200+'px'}
 							:{left: a+'px'}}
 						,isBWShown2 = isBWShown && i=='PDF'
 						,butt2 = $e({clone: i =='site'|| i.length ==2 || i=='PDF'
@@ -628,7 +628,7 @@ if(location.host == xLocSto[xLocStI].origin.replace(/[^/]*\/\//,'')){
 		$q('.siteList .settIn').classList.add('changed');
 	};
 
-})({ //write "lang:''," to remove hints; 'en' for English hints (fr - Français, es - espagnol), 'ar' for Russian
+})({ //write "lang:''," to remove hints; 'en' for English hints (fr - Français, es - espagnol), 'ar' for Arabic
 	lang:''|| (navigator.languages && navigator.languages[1] || navigator.language.substr(0,2)) //='' if hide hints, or 2 letters from $l{}
 	,sites: [ //=array or one site in string
 		'','slashdot.org','reddit.com','techcrunch.com','habr.com','geektimes.com'
