@@ -628,7 +628,7 @@ if(location.host == xLocSto[xLocStI].origin.replace(/[^/]*\/\//,'')){
 		$q('.siteList .settIn').classList.add('changed');
 	};
 
-})({ //write "lang:''," to remove hints; 'en' for English hints (fr - Français, es - espagnol), 'ar' for Russian
+})({ //write "lang:''," to remove hints; 'en' for English hints (fr - Français, es - espagnol), 'ar' for Arabic
 	lang:''|| (navigator.languages && navigator.languages[1] || navigator.language.substr(0,2)) //='' if hide hints, or 2 letters from $l{}
 	,sites: [ //=array or one site in string
 		'','slashdot.org','reddit.com','techcrunch.com','habr.com','geektimes.com'
