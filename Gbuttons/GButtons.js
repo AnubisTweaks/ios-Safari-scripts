@@ -632,7 +632,7 @@ if(location.host == xLocSto[xLocStI].origin.replace(/[^/]*\/\//,'')){
 	lang:''|| (navigator.languages && navigator.languages[1] || navigator.language.substr(0,2)) //='' if hide hints, or 2 letters from $l{}
 	,sites: [ //=array or one site in string
 		'','reddit.com','youtube.com','twitter.com','facebook.com','t.me'
-		,'smashingmagazine.com','engadget.com'] //write your favorite sites
+		,'github.com','stackoverflow.com'] //write your favorite sites
 	,lastHoursLess: 1 //=boolean - not show odd some values of hours after 8 h
 	,design1612: 0 //=boolean - gray design is disabled for layout1811 ===== TODO enable
 	,whiteMintOval: 1 //=boolean - white-mint-oval design with sticked search field
